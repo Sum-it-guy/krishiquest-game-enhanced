@@ -6,7 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useGame } from '@/contexts/GameContext';
 import { FieldScanner } from '@/components/FieldScanner';
-import { FieldGame } from '@/components/FieldGame';
+import { ClashFarmGame } from '@/components/ClashFarmGame';
 import { Link } from 'react-router-dom';
 
 const Index = () => {
@@ -152,7 +152,7 @@ const Index = () => {
       {/* Field Game Section */}
       {field && (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <FieldGame />
+          <ClashFarmGame />
           
           {/* Live Tasks */}
           <Card className="farming-card">

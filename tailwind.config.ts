@@ -145,6 +145,14 @@ export default {
             transform: "translateY(-10px)",
           },
         },
+        "pulse-glow": {
+          "0%, 100%": { 
+            boxShadow: "0 0 5px hsl(var(--primary) / 0.3)" 
+          },
+          "50%": { 
+            boxShadow: "0 0 20px hsl(var(--primary) / 0.6)" 
+          }
+        },
         "shimmer": {
           "0%": {
             backgroundPosition: "-200% 0",
@@ -161,6 +169,10 @@ export default {
         "water-drop": "water-drop 0.8s ease-in-out infinite",
         "harvest-bounce": "harvest-bounce 2s infinite",
         "float": "float 3s ease-in-out infinite",
+        "float-delayed": "float 3s ease-in-out infinite 1s",
+        "float-slow": "float 4s ease-in-out infinite 0.5s",
+        "spin-slow": "spin 8s linear infinite",
+        "pulse-glow": "pulse-glow 2s ease-in-out infinite",
         "shimmer": "shimmer 2s linear infinite",
       },
     },
